@@ -33,6 +33,7 @@ export default config({
   lists: createSchema({
     // Scheme items go in here
     User,
+    // this is the same as User: User wwhen the value you pass is the exact same as the key you can omit the : User
   }),
   ui: {
     // do you want people to access the keystone ui
