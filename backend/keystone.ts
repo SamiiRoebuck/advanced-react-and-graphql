@@ -1,3 +1,4 @@
+import { User } from './schemas/User';
 // take all of the vars from the env file and make the  available to us inside this file
 import 'dotenv/config';
 import { config, createSchema } from '@keystone-next/keystone/schema';
@@ -31,6 +32,7 @@ export default config({
   },
   lists: createSchema({
     // Scheme items go in here
+    User,
   }),
   ui: {
     // do you want people to access the keystone ui
